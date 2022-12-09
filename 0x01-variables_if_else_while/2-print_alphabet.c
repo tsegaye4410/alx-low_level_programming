@@ -2,7 +2,8 @@
 
 /**
  * main - Entry Point
- * Return Always 0 (suceess)
+ * Description: 'print alphabet'
+ * Return: Always 0 (suceess)
  */
 int main(void)
 {
