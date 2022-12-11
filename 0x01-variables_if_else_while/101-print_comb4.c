@@ -17,14 +17,14 @@ int main(void)
 		{
 			for (z = y + 1; z <= 9; z++)
 			{
-		putchar(x + '0');
-		putchar(y + '0');
-		putchar(z + '0');
-		if (x < 7)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+				putchar(x + '0');
+				putchar(y + '0');
+				putchar(z + '0');
+				if (x < 7)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
