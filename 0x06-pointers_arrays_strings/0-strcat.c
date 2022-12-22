@@ -6,16 +6,19 @@
  * @src: The source string to be appended to @dest
  * Return: A pointer to the destination string @dest
  */
-char *strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
-	int len1, len2, i;
+	int dlen = 0, i;
 
-	len1 = strlen(dest);
-	len2 = strlen(src);
-	for (i = 0; i <= len2; i++)
+	while (dest[dlen])
 	{
-		dest[len1 + i] = src[i];
+		dlen++;
 	}
+	for (i = 0; src[i] != 0; i++)
+	{
+		dest[dlen] = src[i];
+		dlen++;
+	}
+	dest[dlen] = '\0';
 	return (dest);
 }
-
